@@ -1,0 +1,33 @@
+app-post-form,
+app-post {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  width: 50%;
+  margin: 20px 0px 20px 0px;
+}
+.title {
+  font-family: "Homemade Apple", cursive;
+  font-size: 24px;
+  color: rgb(3, 169, 244);
+}
+.app-post-form {
+  /* display: flex; */
+  /* justify-content: center; */
+  /* flex-direction: column; */
+  /* justify-content: space-between; */
+  width: 50%;
+  height: 40%;
+}
+.ul {
+  display: flex;
+  /* width: 100%; */
+  padding: 0px 0px 0px 0px;
+}
+.app-post {
+  display: flex;
+  width: 100%;
+}

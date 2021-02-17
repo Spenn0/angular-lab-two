@@ -1,0 +1,13 @@
+<h1 class="title">My Thoughts</h1>
+<app-post-form
+  class="app-post-form"
+  (submitted)="onSubmit($event)"
+></app-post-form>
+<ul>
+  <app-post
+    class="app-post"
+    *ngFor="let post of myPosts; index as i"
+    [postObject]="post"
+    (deleted)="onDelete(i)"
+  ></app-post>
+</ul>

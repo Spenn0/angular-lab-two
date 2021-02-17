@@ -1,0 +1,21 @@
+<form class="add-form" #addForm="ngForm" (ngSubmit)="submitPost(addForm)">
+  <label class="title-label" for="title">Title:</label>
+  <input
+    class="title-input"
+    type="text"
+    name="title"
+    id="title"
+    placeholder="Whattya think?"
+    ngModel
+  />
+  <label class="thought-label" for="thought">Thought:</label>
+  <input
+    class="thought-input"
+    type="text"
+    name="thought"
+    id="thought"
+    placeholder="Wow, Such thoughts"
+    ngModel
+  />
+  <button class="button">Add</button>
+</form>
