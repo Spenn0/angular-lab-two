@@ -9,11 +9,12 @@ import { Post } from '../interfaces/post';
 })
 export class PostFormComponent implements OnInit {
   @Output() submitted = new EventEmitter<Post>();
+
   constructor() {}
 
   ngOnInit(): void {}
 
-  submitPost = (form: NgForm) => {
+  submitPost = (form: NgForm): void => {
     let newPost: Post = {
       title: form.form.value.title,
       thought: form.form.value.thought,

@@ -1,7 +1,9 @@
 <h1 class="title">My Thoughts</h1>
+<button class="button" (click)="toggleForm()" *ngIf="!showForm">Write</button>
 <app-post-form
   class="app-post-form"
   (submitted)="onSubmit($event)"
+  *ngIf="showForm"
 ></app-post-form>
 <ul>
   <app-post
